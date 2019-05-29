@@ -41,6 +41,9 @@ a {
     color: var(--link-color);
 }
 
+a:hover :not(.feature:hover) {
+    color: var(--link-hover-color);
+}
 .feature {
     display: flex;
     flex-direction: column;
@@ -54,10 +57,6 @@ a {
     background-color: var(--link-color);
     justify-content: space-evenly;
     align-items: center;
-}
-
-a:hover {
-    color: var(--link-hover-color);
 }
 
 .feature:hover {
