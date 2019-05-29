@@ -31,6 +31,8 @@
     - “& Linwell Advertiser” :: is typeset with Script MT. I am currently
          looking for a free substitute fallback font.
 *** All headlines are capitalized
+*** No rules
+    Except for the double rule at the end of the masthead.
 *** Style
     I remove full stops from acronyms. “U.F.O.” changes to ”UFO”.
 
