@@ -10,7 +10,7 @@
   newspaper it contained deliberate errata, misprints, repetitions, and was
   overall, badly designed using e.g. six or seven different fonts just on the
   front page, underlined headlines, and complete disregard for consistency; not
-  to speak about the actual content.
+  to talk about the actual content.
 
   The original text was written by Ian Anderson, Jeffrey Hammond, John Evan, and
   Roy Elridge from Chrysalis with additional collaboration from other Jethro Tull
@@ -39,6 +39,7 @@
     #+CAPTION: A scan of The St. Cleve's Chronicle & Lindwell Advertiser original front page
     #+ATTR_HTML: :width 30% :alt The St. Cleve's Chronicle front page.
     [[file:background.jpg]]
+
     #+CAPTION: A screenshot of the page as rendered by Firefox.
     #+ATTR_HTML: :width 30% :alt A screenshot of our web page.
     [[file:screenshot.png]]
