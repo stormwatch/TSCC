@@ -1,0 +1,44 @@
+#+title: The St. Cleve Chronicle
+#+subtitle: & Linwell Advertiser
+#+date: [2019-05-26]
+#+author: Ezequiel Birman
+
+* The Deadline for the Headline is the Breadline
+  Recreating the [[http://jethrotull.com/taab/][Thick as a Brick]] album cover as a web page shall be fun. The
+  gatefold consisted of a twelve page spoof of a newspaper with an overtly
+  complicated tabloid page layout and —what is more— being a mock of a parochial
+  newspaper it contained deliberate errata, misprints, repetitions, and was
+  overall, badly designed using e.g. six or seven different fonts just on the
+  front page, underlined headlines, and complete disregard for consistency; not
+  to speak about the actual content.
+
+  The original text was written by Ian Anderson, Jeffrey Hammond, John Evan, and
+  Roy Elridge from Chrysalis with additional collaboration from other Jethro Tull
+  members.
+
+  This excercise in layout originated as part of [[https://github.com/btholt][Brian Holt]]'s excellent web
+  development course at [[https://frontendmasters.com/courses/web-development-v2/][Frontend Masters]]. I don't intend to reproduce an exact
+  copy but to try new concepts as I learn them. There is also a =facsimile=
+  branch in which I'll strive to obtain a verbatim copy if time allows it.
+
+** Main changes
+*** Rearrange the Layout
+    In acordance to the excercise guidelines, I use Flex. Grid will surely added
+    at some later point.
+*** Minimize the Use of Fonts
+    - Headlines :: use Roboto Condensed bold
+    - The masthead :: is typeset with Old English Text MT and will fallback to Chomsky.
+    - “& Linwell Advertiser” :: is typeset with Script MT. I am currently
+         looking for a free substitute fallback font.
+*** All headlines are capitalized
+*** Style
+    I remove full stops from acronyms. “U.F.O.” changes to ”UFO”.
+
+ The content will remain as it was originally intended with all the misprints
+ and errata.
+
+* Sources
+  I used to own the local (Argentinean) vinyl press which didn't include the
+  newspaper but I've also got the 25th Anniversary Edition CD remaster wich
+  features a scaled-down but nevertheless full reproduction of the original
+  twelve page tabloid.
