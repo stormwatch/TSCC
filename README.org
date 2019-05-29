@@ -34,9 +34,14 @@
 *** No rules
     Except for the double rule at the end of the masthead.
 *** Style
-    I removed full stops from acronyms. Eg. “U.F.O.” changed to ”UFO”.
+    I removed full stops from acronyms. Eg. “U.F.O.” changes to ”UFO”.
 
- The content will remain as intended with all the misprints and errata.
+    #+CAPTION: A scan of The St. Cleve's Chronicle & Lindwell Advertiser original front page
+    #+ATTR_HTML: :width 30% :alt The St. Cleve's Chronicle front page.
+    [[file:background.jpg]]
+    #+CAPTION: A screenshot of the page as rendered by Firefox.
+    #+ATTR_HTML: :width 30% :alt A screenshot of our web page.
+    [[file:screenshot.png]]
 
 * Sources
   I used to own the local (Argentinean) vinyl press which didn't include the
