@@ -1,7 +1,7 @@
 :root {
     --link-color: red;
     --link-hover-color: green;
-    /* background colour of the scan I found in the internet */
+    /* background colour of the scan I found by googling included as ../background.jpg */
     /* --background-color: #9a8c81; */
     --background-color: white;
 }
@@ -44,6 +44,7 @@ a {
 a:hover :not(.feature:hover) {
     color: var(--link-hover-color);
 }
+
 .feature {
     display: flex;
     flex-direction: column;
