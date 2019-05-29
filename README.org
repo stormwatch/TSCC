@@ -34,10 +34,9 @@
 *** No rules
     Except for the double rule at the end of the masthead.
 *** Style
-    I remove full stops from acronyms. “U.F.O.” changes to ”UFO”.
+    I removed full stops from acronyms. Eg. “U.F.O.” changed to ”UFO”.
 
- The content will remain as it was originally intended with all the misprints
- and errata.
+ The content will remain as intended with all the misprints and errata.
 
 * Sources
   I used to own the local (Argentinean) vinyl press which didn't include the
