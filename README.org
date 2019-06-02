@@ -22,9 +22,12 @@
   branch in which I'll strive to obtain a verbatim copy if time allows it.
 
 ** Main changes
+*** TODO Add a section menu somewhere
+    I'll add some sort of menu or nav bar as per the excersice guidelines while
+    trying to keep the printed-on-paper look at the same time.
 *** Rearrange the Layout
-    In acordance to the excercise guidelines, I use Flex. Grid will surely added
-    at some later point.
+    In accordance to the excercise guidelines, I use Flex. Grid will surely be
+    implemented at some later point.
 *** Minimize the Use of Fonts
     - Headlines :: use Roboto Condensed bold
     - The masthead :: is typeset with Old English Text MT and will fallback to Chomsky.
