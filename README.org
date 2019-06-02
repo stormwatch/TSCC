@@ -2,6 +2,7 @@
 #+subtitle: & Linwell Advertiser
 #+date: [2019-05-26]
 #+author: Ezequiel Birman
+#+options: todo:t
 
 * The Deadline for the Headline is the Breadline
   Recreating the [[http://jethrotull.com/taab/][Thick as a Brick]] album cover as a web page shall be fun. The
@@ -13,14 +14,14 @@
   to talk about the actual content.
 
   The original text was written by Ian Anderson, Jeffrey Hammond, John Evan, and
-  Roy Elridge from Chrysalis with additional collaboration from other Jethro Tull
-  members.
+  Roy Elridge from Chrysalis with additional collaboration from other Jethro
+  Tull members. I don't intend to reproduce an exact copy but to try new
+  concepts as I learn them. There will be also a =facsimile= branch in which
+  I'll strive to obtain a verbatim copy if time allows it.
 
   This excercise in layout originated as part of [[https://github.com/btholt][Brian Holt]]'s excellent web
-  development course at [[https://frontendmasters.com/courses/web-development-v2/][Frontend Masters]]. I don't intend to reproduce an exact
-  copy but to try new concepts as I learn them. There is also a =facsimile=
-  branch in which I'll strive to obtain a verbatim copy if time allows it.
-
+  development course at [[https://frontendmasters.com/courses/web-development-v2/][Frontend Masters]]. 
+  
 ** Main changes
 *** TODO Add a section menu somewhere
     I'll add some sort of menu or nav bar as per the excersice guidelines while
