@@ -23,9 +23,9 @@
   development course at [[https://frontendmasters.com/courses/web-development-v2/][Frontend Masters]]. 
   
 ** Main changes
-*** TODO Add a section menu somewhere
-    I'll add some sort of menu or nav bar as per the excersice guidelines while
-    trying to keep the printed-on-paper look at the same time.
+*** Section links
+    I added a section links menu as per the excersice guidelines while trying to
+    keep the printed-on-paper look at the same time.
 *** Rearrange the Layout
     In accordance to the excercise guidelines, I use Flex. Grid will surely be
     implemented at some later point.
