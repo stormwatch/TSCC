@@ -6,7 +6,7 @@
     --background-color: white;
     --section-color: : #AA2323;
     --headline-font-family: "Roboto Condensed", sans-serif;
-    --feature-size: 12vw;
+    --feature-size: 9vw;
 }
 
 html {
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    /* This may become handy when working on the facsimile branch */
+    /* This may come handy when working on the facsimile branch */
     /* opacity: 0.5; */
     /* background: url(../background.jpg) no-repeat; */
     /* background-size: cover; */
@@ -37,7 +37,7 @@ h1, h2, h3, h4 ,h5 ,h6 {
 }
 
 h1 {
-    font-size: 3vw;
+    font-size: 3em;
     font-family: var(--headline-font-family);
     text-transform: uppercase;
 }
@@ -49,7 +49,7 @@ h1, h2 {
 
 ul {
     margin: 0;
-    /* Firefox sets the default left padfing to 40px; */
+    /* Firefox sets the default left padfing to 40px */
     padding-left: 0; 
     list-style-type: none;
     display: flex;
@@ -76,15 +76,16 @@ a:not(.section):hover {
 }
 
 #feature {
-    /* width: var(--feature-size); */
-    /* height: var(--feature-size); */
+    margin-left: -1vw;
+    margin-top: 1vw;
+    width: var(--feature-size);
+    height: var(--feature-size);
     font-weight: bold;
-    margin-left: -9vw;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     justify-content: space-evenly;
     align-items: center;
+    padding: 0px;
 }
 
 .section:hover {
@@ -92,11 +93,13 @@ a:not(.section):hover {
 }
 
 #feature > :nth-child(1) {
-    font-size: 3.5vw;
+    /* font-size: 0.45em; */
+    font-size: 2.5vw;
 }
 
 #feature > :nth-child(2) {
-    font-size: 5.5vw;
+    /* font-size: 0.7em; */
+    font-size: 4vw;
 }
 
 #feature > :nth-child(3) {
@@ -106,9 +109,11 @@ a:not(.section):hover {
 .masthead {
     display: flex;
     font-family: "Old English Text MT Std", "ChomskyRegular", fantasy;
-    font-size: 8vw;
+    /* font-size: 10em; */
+    font-size: 7.7vw;
+    line-height: 0.5;
     align-items: flex-end;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .masthead__column {
@@ -117,12 +122,19 @@ a:not(.section):hover {
 }
 
 .masthead__smalltext {
+    /* font-size: 0.3em; */
+    /* line-height: 0; */
     font-size: 3vw;
-    line-height: 0;
+    line-height: 1.8;
 }
 
 .masthead__suptext {
+    /* font-size: 4rem; */
     font-size: 5vw;
+}
+
+.masthead__artwork {
+    /* width: 5%; */
 }
 
 .header--decorated {
@@ -130,6 +142,7 @@ a:not(.section):hover {
     align-items: center;
     align-content: space-between;
     text-align: center;
+    /* font-size: 4em; */
     font-size: 2vw;
     font-family: "Script MT Bold", cursive;
     /* margin-bottom: .5em; */
@@ -138,7 +151,7 @@ a:not(.section):hover {
 .header--decorated::before,
 .header--decorated::after {
     flex: 1;
-    font-size: 1vw;
+    font-size: 1rem;
     font-family: serif;
     border-bottom: .5em double;
 }
@@ -146,19 +159,22 @@ a:not(.section):hover {
 .header--decorated::before {
     content: "Friday January 7th 1972";
     margin-right: 1vw;
+    font-size: 1vw;
 }
 
 .header--decorated::after {
     content: "No. 2072\2001\2001\2001\2001\2001\2001\2001 Price 3p Weekly";
     margin-left: 1vw;
+    font-size: 1vw;
 }
 
 .main__front-news {
     font-family: Roboto Condensed;
     text-align: center;
-    font-size: 9.9vw;
+    font-size: 10.6vw;
+    /* font-size: 12.7em; */
     line-height: .8;
-    margin-top: .5ex;
+    padding-top: 0.5ex;
     white-space: nowrap;
 }
 
@@ -183,6 +199,7 @@ p {
     flex-flow: row wrap;
     text-align: justify;
     justify-content: space-between;
+    /* align-items: stretch; */
 }
 
 .article-wrapper {
@@ -194,6 +211,7 @@ article {
     margin-bottom: 2em;
 }
 
+/* This is a hack to force three columns when using flex */
 .article-wrapper:nth-child(4n)::after {
     content: '';
     width: 100%;
@@ -213,8 +231,6 @@ figure {
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
     width: 100%;
 }
 
