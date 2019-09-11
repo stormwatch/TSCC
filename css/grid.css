@@ -1,0 +1,397 @@
+:root {
+    --link-color: firebrick;
+    --link-hover-color: green;
+    /* background colour of the scan I found by googling included as ../background.jpg */
+    /* --background-color: #9a8c81; */
+    --background-color: white;
+    --section-color: : #AA2323;
+    --headline-font-family: "Roboto Condensed", sans-serif;
+    /* --phi: 1.618033989; */
+    /* --masthead__size: 14.58980337503375031vh; */
+    --masthead__size: 10rem;
+    --masthead__size-sup: calc(var(--masthead__size) / 2.61);
+    --masthead__size-small: calc(var(--masthead__size) / 4.2360679774997);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    /* This may come handy when working on the facsimile branch */
+    /* opacity: 0.5; */
+    /* background: url(../background.jpg) no-repeat; */
+    /* background-size: cover; */
+
+    background-color: var(--background-color);
+    padding: 0;
+    margin: 1vmin 11vmin;
+    line-height: 1;
+    /* text-size-adjust: none; */
+}
+
+main {
+    hyphens: auto;
+}
+
+h1, h2, h3, h4 ,h5 ,h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 2em;
+    font-family: var(--headline-font-family);
+    text-transform: uppercase;
+}
+
+h1, h2 {
+    /* font-weight: bold; */
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    /* Firefox sets the default left padfing to 40px */
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-transform: uppercase;
+}
+
+#home {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#feature {
+    grid-row: 2/4;
+    grid-column: 4/5;
+}
+
+#entertainment {
+    grid-row: 3/4;
+    grid-column: 5/6;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+/* switch foreground and background colors for .section elements */
+a:not(.section):hover {
+    color: var(--link-hover-color);
+}
+
+.section {
+    font-family: 'Roboto Condensed', sans-serif;
+    /* font-weight: bold; */
+    /* padding: .1em; */
+    /* margin: 0 .2rem; */
+    color: var(--background-color);
+    background-color: var(--link-color);
+}
+
+.section:hover {
+    background-color: var(--link-hover-color);
+}
+
+.header__nav {
+    grid-area: nav;
+    font-weight: bold;
+    padding: 0px;
+    line-height: 1.5;
+    align-self: center;
+}
+
+/* #feature > :nth-child(1) { */
+/*     /\* font-size: 0.45em; *\/ */
+/*     font-size: 2.5vw; */
+/* } */
+
+/* #feature > :nth-child(2) { */
+/*     /\* font-size: 0.7em; *\/ */
+/*     font-size: 4vw; */
+/* } */
+
+/* #feature > :nth-child(3) { */
+/*     font-size: 1.2vw; */
+/* } */
+
+.masthead__title {
+    font-family: "Old English Text MT Std", "ChomskyRegular", fantasy;
+}
+
+#masthead__The {
+    font-size: var(--masthead__size-small);
+    /* text-align: left; */
+    justify-self: start;
+    grid-area: The;
+    align-self: end;
+    /* line-height: 0.5; */
+}
+
+#masthead__St-Cleve, #masthead__Chronicle {
+    font-size: var(--masthead__size);
+    /* align-self: baseline; */
+    /* min-width: fit-content; */
+    /* min-width: max-content; */
+}
+
+#masthead__suptext {
+    /* font-size: 4rem; */
+    font-size: var(--masthead__size-sup)
+}
+
+#masthead__St-Cleve {
+    grid-area: St-Cleve;
+    /* align-self: end; */
+    /* justify-self: end; */
+}
+
+#masthead__artwork {
+    grid-area: artwork;
+    width: calc(var(--masthead__size) * 2);
+    /* height: 50%; */
+    /* align-self: center; */
+    /* justify-self: center; */
+}
+
+#masthead__Chronicle {
+    grid-area: Chronicle;
+    /* justify-self: end; */
+}
+
+#masthead__Linwell {
+    grid-area: Linwell;
+    font-family: "Script MT Bold", cursive;
+    /* align-self: center; */
+    /* justify-self: center; */
+    /* margin-bottom: .5em; */
+    font-size: var(--masthead__size-sup);
+    background-color: var(--background-color);
+    /* to overlap the horizontal double-rule */
+    z-index: 1;
+
+    white-space: nowrap;
+}
+
+.masthead__run {
+    /* font-family: serif; */
+    /* font-size: small; */
+    /* font-size: var(--masthead__size-small); */
+}
+
+#masthead__rule {
+    border-top: thick double;
+    grid-row: 4/5;
+    grid-column: 1/-1;
+    align-self: start;
+    width: 100%;
+}
+
+#masthead__date {
+    grid-area: date;
+}
+
+#masthead__number {
+    grid-area: number;
+}
+
+#masthead__price {
+    grid-area: price;
+}
+
+main{
+    /* margin-left: calc(var(--feature-size) / 3); */
+}
+
+.main__front-news {
+    /* background: yellow; */
+    font-family: Open Sans Condensed, Roboto Condensed;
+    /* text-align: center; */
+    /* font-size: 23.606797749978vh; */
+    /* font-size: 12.7em; */
+    /* font-size: 14.313rem; */
+    /* font-size: 100%; */
+    font-size: calc(7.5vw + 7.5vh + 3.25vmin);
+    /* font-kerning: -1em; */
+    /* margin-top: 0.5ex; */
+    /* white-space: nowrap; */
+}
+
+.subtitle {
+    text-align: justify;
+    column-span: all;
+}
+
+p {
+    margin: 0;
+}
+
+.lead {
+    font-weight: bold;
+}
+
+.continued {
+    font-style: italic;
+}
+
+.main__articles{
+    /* display: grid; */
+    /* grid-gap: 1em; */
+    /* grid-template-columns: 1fr; */
+    text-align: justify;
+}
+
+/*
+@media (min-width: 40em) {
+    .main__articles {
+        grid-template-rows: 1fr 2fr 2fr 2fr;
+        grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   }
+}
+*/
+
+article {
+    margin-top: 1em;
+}
+
+#header__judges {
+    /* FF 69 does not support column-span so we wrap multi-column around
+   .artile__body-text instead*/
+    /* column-span: all; */
+
+    /* Maybe for the facsimile */
+    /* position: relative; */
+    /* left: -14vw; */
+    /* white-space: nowrap; */
+}
+
+#article__judges h1 {
+    /* centered looks ugly */
+    text-align: left;
+    font-size: 3em;
+}
+
+img {
+    width: 100%;
+}
+
+figure {
+    font-style: italic;
+    font-size: smaller;
+    margin: 0;
+    /* margin: 1em 0; */
+}
+
+/* This is a remnant of trying the solutions posted in
+   https://stackoverflow.com/questions/6534473/how-can-i-make-the-width-of-my-figcaption-match-the-width-of-the-img-inside
+   It seems I don't need this for the moment*/
+/* figcaption { */
+/*     display: table-caption; */
+/*     caption-side: bottom; */
+/* } */
+
+/* :not(#article__judges) > */
+.article__body-text {
+    /* if I show columns, the text won't wrap around the figure and viceversa */
+    /* column-width: 10.2vw; */
+    /*is equivalent on 1200px width screen to:*/
+    column-width: 250px;
+    column-gap: 20px;
+    /* column-width: 15em; */
+}
+
+
+@media (min-width: 40em) {
+    .masthead {
+        display: grid;
+        grid-template-rows:
+            repeat(4, auto);
+        grid-template-columns:
+            repeat(7, auto);
+        /* the Linwell area overlaps the double-rule decoration by means of a solid
+   background and a higher z-index */
+        grid-template-areas:
+            "nav The The artwork . . ."
+                "nav St-Cleve St-Cleve artwork Chronicle Chronicle Chronicle"
+                "nav date Linwell Linwell Linwell number price"
+                ". . Linwell Linwell Linwell . .";
+        align-items: end;
+        justify-items: center;
+        /* justify-content: stretch; */
+        /* align-content: stretch; */
+    }
+
+    .figure-right {
+        /*remnants of some experiment*/
+        /* display: table; */
+        /* position: absolute; */
+        /* column-span: all; */
+
+        width: 50%;
+        float: right;
+        /* margin-left: 1em; */
+        /* grid-row: 1/3; */
+        /* grid-column: 3/6; */
+    }
+
+
+    /* Article grid placement trying to mimic the original */
+
+    #article__judges {
+        grid-row: 1/2;
+        grid-column: 2/6;
+        /* width: 32%; */
+        /* margin-bottom: 2em; */
+    }
+
+    #article__art {
+        /* For the facsimile */
+        /* grid-row: 2/6; */
+
+        grid-row: 1/3;
+        grid-column: 1/2;
+    }
+
+    #article__ufo {
+        grid-row: 2/4;
+        grid-column: 2/3;
+    }
+
+    #article__little {
+        grid-row: 2/4;
+        grid-column: 3/4;
+    }
+
+    #article__director {
+        grid-row: 2/4;
+        grid-column: 4/5;
+
+        /* Maybe these for the facsimile */
+        /* position: relative; */
+        /* width: 50%; */
+        /* float: right; */
+    }
+
+    #article__mongrel {
+        grid-row: 2/3;
+        grid-column: 5/6;
+    }
+
+    #article__head {
+        grid-row: 3/4;
+        grid-column: 5/6;
+    }
+}

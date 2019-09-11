@@ -5,52 +5,51 @@
         <title>The St. Cleve Chronicle</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet"> -->
-        <link rel="stylesheet" href="css/fonts.css" type="text/css" media="screen" />
-        <link rel="stylesheet" href="css/flex.css" type="text/css" media="screen" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/fonts.css" type="text/css" />
+        <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen" />
     </head>
     <body>
         <header class="header__main">
             <div class="masthead">
-                <a id="feature" class="section" href="">
-                    <div>JETHRO</div>
-                    <div>TULL</div>
-                </a>
-                <div class="masthead__column">
-                    <small class="masthead__smalltext">
-                        The
-                    </small>
-                    <div>
-                        S<sup class="masthead__suptext">t.</sup>Cleve
-                    </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li id="feature"><a class="section" href="#">JETHRO TULL</a></li>
+                        <li id="home"><a class="section" href="#">Home</a></li>
+                        <li id="entertainment"><a class="section" href="#">Enterntainment</a></li>
+                        <li id="ads"><a class="section" href="#">Small Ads</a></li>
+                        <li id="messages"><a class="section" href="#">Messages</a></li>
+                        <li id="about"><a class="section" href="https://github.com/stormwatch/TSCC/">About</a></li>
+                    </ul>
+                </nav>
+                <small id="masthead__The" class="masthead__title">
+                    The
+                </small>
+                <div id="masthead__St-Cleve" class="masthead__title">
+                    S<sup id="masthead__suptext">t.</sup>Cleve
                 </div>
-                <img class="masthead__artwork " src="images/artwork.png" alt="artwork" />
-                <div>
+                <img id="masthead__artwork" src="images/artwork.png" alt="artwork" />
+                <div id="masthead__Chronicle" class="masthead__title">
                     Chronicle
                 </div>
+                <div id="masthead__Linwell">
+                    & Linwell Advertiser
+                </div>
+                <div id="masthead__date" class="masthead__run">Friday January 7th 1972</div>
+                <div id="masthead__number" class="masthead__run">No. 2072</div>
+                <div id="masthead__price" class="masthead__run">Price 3p Weekly</div>
+                <div id="masthead__rule"></div>
             </div>
-            <!-- date, number and price are, for the time being, implemented as `content' properties in css ::before and ::after pseudo-elements -->
-            <!-- <div class="header__date">
-                 <div>Friday January 7th 1972</div>
-                 <div>No. 2072</div>
-                 <div>Price 3p Weekly</div>
-                 </div> -->
-            <div class="header--decorated">
-                & Linwell Advertiser
-            </div>
-            <nav class="header__nav">
-                <ul>
-                    <li><a class="section" href="#">Home</a></li>
-                    <li><a class="section" href="#">Enterntainment</a></li>
-                    <li><a class="section" href="#">Small Ads</a></li>
-                    <li><a class="section" href="#">Messages</a></li>
-                    <li><a class="section" href="https://github.com/stormwatch/TSCC/">About</a></li>
-                </ul>
-            </nav>
         </header>
-        <h1 class="main__front-news">THICK AS A BRICK</h1>
-        <main class="main__articles">
-            <div class="article-wrapper">
-                <article id="judges">
+        <main>
+            <section class="main__articles">
+                <h1 class="main__front-news">THICK AS A BRICK</h1>
+                <article id="article__judges">
+                    <header id="header__judges">
+                        <h1>JUDGES DISQUALIFY <q>LITTLE MILTON</q> IN LAST MINUTE RUMPUS</h1>
+                    </header>
+                    <h2 class="subtitle">THE SOCIETY FOR LITERARY ADVANCEMENT AND GESTATION (SLAG), announced their decition late last night to disqualify eight year old prize winner Gerald (Little Milton) Bostock following the hundreds of protests and threaths received after the reading of his epic poem “Thick as a Brick” on BBC Television last Monday night.
+                    </h2>
                     <figure class="figure-right">
                         <img class="main__img" src="images/white judges.png" alt="main"/>
                         <figcaption>
@@ -58,126 +57,120 @@
                             Society at the Parrit Rooms. Left to Right: Lord Clive <q>Polly</q> Parrit. Mr. and Mrs. Bostock, Gerald Bostock, Lady Parrit, Julia, Gerald's chum with whom he writes poems.
                         </figcaption>
                     </figure>
-                    <header>
-                        <h1>JUDGES DISQUALIFY <q>LITTLE MILTON</q> IN LAST MINUTE RUMPUS</h1>
-                    </header>
-                    <h2 class="subtitle">THE SOCIETY FOR LITERARY ADVANCEMENT AND GESTATION (SLAG), announced their decition late last night to disqualify eight year old prize winner Gerald (Little Milton) Bostock following the hundreds of protests and threaths received after the reading of his epic poem “Thick as a Brick” on BBC Television last Monday night.
-                    </h2>
                     <p class="lead">
                         A hastily reconvened panel of Judges accepted the decision by four leading child psychiatrists that the boy's mind was seriously unbalanced and that his work was a product of an “extremely unwholesome attitude towards life, his God and Country”. Bostock was recommended for psychiatric treatment following examination “without delay”. The first prize will now be presented to runner up Mary Whiteyard (aged 12) for her essay on Christian ethics entitled, “He died to save the little Children”.
                     </p>
-                    <p>
-                        The literary Competition which was for children aged from 7 to 16 years of age, was sponsored by leading national newspaper and received thousands of entries from schools all over Britain. Mt Humphrey Martin, the headmaster of Moordale Primary School said Gerald, nicknamed “Little Milton” by his English master beacuse of his poetic ability, was mentally advanced for his age, although inclined on occasions to obscure to obscure and verbose assertions which led him to being somewhat unpopular with his schoolmates He went on to say that without doubt the child had great future academically and that his progress was unsurpased in the history of Moordale Primary. Gerald and his parents move to St. Cleve four years ago from Manchester when Mr. Bostock decided for health reasons to live away from the city. David Bostock now does occasional gardening work while his wife
-                        <!-- second column -->
-                        Daphne is well known to the congregation of St. Cleve Parish Church for her activities in social work and her wonderful buffet luncheon at the fete last Saturday. Well done, Daphne! Mr. Bostock said this morning of “Little Milton's” disqualification, “We are heartbroken at the way the judges changed their minds, and the loss of the prize money and scholarship means we shall find difficulty in paying the instalments on Gerald's Encyclopædia Britannica. I shall have to do Dr. Munson's roses next week after all.” When he heard of the decision against him, Geral went to his room and locked the door, “Mrs. Bostock and I are sorely vexed at the way this has turned out”, said Mr. Bostock of No. 6 Pollit Close, St. Cleve.
-                    </p>
-                    <p class="continued">
-                        Many local residents are also annoyed and hurt by the news and as some consolation to Gerald and his parents the St. Cleve Chronicle prints the full text of the disqualified poem this week on <a href="">page 7</a>.
-                    </p>
-                    <h2>G_ _r</h2>
-                    <p>
-                        <span class="lead">Many of the readers who heard Gerald read his work on the “young arts” programme on BBC 2 felt that it was not one poem but a series of separate poems put together merely to appear impressive.</span>
-                    </p>
-                    <p>
-                        Many of the viewers' complaints were centred around <q>Little Milton's</q> use of a four letter word during the interview which followed his reading. The producer of <q>Young Arts</q> Michael Fenwick said later, <q>We have come to expect that sort of language from adults on television this days, but to hear it from a child of eight is particularly depressing. When I was his age I did not even know what the word G_ _r meant.</q>
-                    </p>
+                    <!-- multi-column text doesn't wrap around the floating figure. :( -->
+                    <div class="article__body-text">
+                        <p>
+                            The literary Competition which was for children aged from 7 to 16 years of age, was sponsored by leading national newspaper and received thousands of entries from schools all over Britain. Mt Humphrey Martin, the headmaster of Moordale Primary School said Gerald, nicknamed “Little Milton” by his English master beacuse of his poetic ability, was mentally advanced for his age, although inclined on occasions to obscure to obscure and verbose assertions which led him to being somewhat unpopular with his schoolmates He went on to say that without doubt the child had great future academically and that his progress was unsurpased in the history of Moordale Primary. Gerald and his parents move to St. Cleve four years ago from Manchester when Mr. Bostock decided for health reasons to live away from the city. David Bostock now does occasional gardening work while his wife
+                            <!-- second column -->
+                            Daphne is well known to the congregation of St. Cleve Parish Church for her activities in social work and her wonderful buffet luncheon at the fete last Saturday. Well done, Daphne! Mr. Bostock said this morning of “Little Milton's” disqualification, “We are heartbroken at the way the judges changed their minds, and the loss of the prize money and scholarship means we shall find difficulty in paying the instalments on Gerald's Encyclopædia Britannica. I shall have to do Dr. Munson's roses next week after all.” When he heard of the decision against him, Geral went to his room and locked the door, “Mrs. Bostock and I are sorely vexed at the way this has turned out”, said Mr. Bostock of No. 6 Pollit Close, St. Cleve.
+                        </p>
+                        <p class="continued">
+                            Many local residents are also annoyed and hurt by the news and as some consolation to Gerald and his parents the St. Cleve Chronicle prints the full text of the disqualified poem this week on <a href="">page 7</a>.
+                        </p>
+                        <h2>G_ _r</h2>
+                        <p>
+                            <span class="lead">Many of the readers who heard Gerald read his work on the “young arts” programme on BBC 2 felt that it was not one poem but a series of separate poems put together merely to appear impressive.</span>
+                        </p>
+                        <p>
+                            Many of the viewers' complaints were centred around <q>Little Milton's</q> use of a four letter word during the interview which followed his reading. The producer of <q>Young Arts</q> Michael Fenwick said later, <q>We have come to expect that sort of language from adults on television this days, but to hear it from a child of eight is particularly depressing. When I was his age I did not even know what the word G_ _r meant.</q>
+                        </p>
+                    </div>
                 </article>
-            </div>
-            <div class="article-wrapper">
-                <article id="art">
+                <article id="article__art">
                     <header>
                         <h1>
                             ART DEMO FORCES CLOSURE
                         </h1>
                     </header>
-                    <p>
-                        THREE poets and five painters painter were arrested yesterday afternoon outside of Lady Parrit House after repeatedly causing disturbance and harrasing members of the public visisting the museum and gallery throughout the day. They were demonstrating against gallery policy of showing only resident exhibition works, and resident exhibition works, and led by heavily bearded Ahab Gross demanded that the
-                        <!-- inserted image in the original betwen “gal-” and “-lery -->
-                        <figure>
-                            <img src="images/white art.png" alt="Ugly scenes as Constable Grimpace tries to calm the protesters." />
-                            <figcaption>
-                                Ugly scenes as Constable Grimpace tries to calm
-                                the protesters.
-                            </figcaption>
-                        </figure>
-                        gallery showed the <q>work of the people</q> and gave more attention to new and unknown local artists. Mr. Gross allegedly squirted a tube of Cadmium Yellow oil paint at a police constable and signed his name on the policeman's helmet. AIded by other scruffy members of the action group, Gross tied up the policeman and attempted to auction off the <q>work of art</q> to passers by. Said the unfortunate constable Grimpace later, <q>I was absolutely disgusted. No one even made even made an offer to help me</q>
-                    </p>
-                    <p>
-                        Following the release of the policeman by a number of construction workers who were close at hand, the demonstration moved inside the Gallery where serveral works were damaged and obscene appendages were drawn on some fine old paintings of racehorses. The arrests took place following a scuffle involving the artists and a group of Womens Lib supporters from Burnley on a three-day outing. Several of the ladies were badly bruised and unfortunately their match with Chelsea FC tomorrow has had to be cancelled.
-                    </p>
+                    <div class="article__body-text">
+                        <p>
+                            THREE poets and five painters painter were arrested yesterday afternoon outside of Lady Parrit House after repeatedly causing disturbance and harrasing members of the public visisting the museum and gallery throughout the day. They were demonstrating against gallery policy of showing only resident exhibition works, and resident exhibition works, and led by heavily bearded Ahab Gross demanded that the
+                            <!-- inserted image in the original betwen “gal-” and “-lery -->
+                            <figure>
+                                <img src="images/white art.png" alt="Ugly scenes as Constable Grimpace tries to calm the protesters." />
+                                <figcaption>
+                                    Ugly scenes as Constable Grimpace tries to calm
+                                    the protesters.
+                                </figcaption>
+                            </figure>
+                            gallery showed the <q>work of the people</q> and gave more attention to new and unknown local artists. Mr. Gross allegedly squirted a tube of Cadmium Yellow oil paint at a police constable and signed his name on the policeman's helmet. AIded by other scruffy members of the action group, Gross tied up the policeman and attempted to auction off the <q>work of art</q> to passers by. Said the unfortunate constable Grimpace later, <q>I was absolutely disgusted. No one even made even made an offer to help me</q>
+                        </p>
+                        <p>
+                            Following the release of the policeman by a number of construction workers who were close at hand, the demonstration moved inside the Gallery where serveral works were damaged and obscene appendages were drawn on some fine old paintings of racehorses. The arrests took place following a scuffle involving the artists and a group of Womens Lib supporters from Burnley on a three-day outing. Several of the ladies were badly bruised and unfortunately their match with Chelsea FC tomorrow has had to be cancelled.
+                        </p>
                 </article>
-            </div>
-            <div class="article-wrapper">
-                <article id="ufo">
-                    <header>
-                        <h1>UFO SIGHTING SENSATION</h1>
-                    </header>
-                    <p class="lead">
-                        A statement has been issued following last Tuesday's night' alleged spotting of an unidentified flying “Object”.
-                    </p>
-                    <p>The following was related to staff reporter, Nigel Turpin, by policy constable Grimpace of the local constabulary.
-                    </p>
-                    <q>I was proceeding towards the junction of Tremlett Avenue and High Street, St. Cleve at approximately two minutes past eleven on Tuesday evening when my attention was called to a strange noise.
-                    </q>
-                    <q>Subsequent investigation revealed this to be a brightly lit object low in the southern sky over Linwell. After a few bad <q>noises</q> the <q>Phenomenon</q> flew away at an <q>Amazing speed</q> in the direction of the public library.
-                        <h2>Hasty Snap</h2>
-                        Fortunately I was able to make a photographic testimonial of the <q>Ship in the sky</q> (Reproduced above)
-                    </q>
-                    <!-- It is in fact reproduced below -->
-                    <figure>
-                        <img src="images/white ufo.png" alt="photograph" />
-                        <figcaption>The Grimpace object over the library.</figcaption>
-                    </figure>
-                    The <q>Photograph</q> and PC Grimpace are being <q>forwarded to East Anglia Divisional Headquarters</q> for <q>further enquires</q>.
-                </article>
-            </div>
-            <div class="article-wrapper">
-                <article id="little">
-                    <header>
-                        <h1>
-                            LITTLE MILTON IN SCHOOL-GIRL PREGNANCY ROW
-                        </h1>
-                    </header>
-                    <p class="lead">
-                        A fourteen year-old this week blamed her pregnancy on Gerald Bostock, the eight year old poet at the centre of this week's major St. Cleve controversy.
-                    </p>
-                    <p>
-                        The girls, 14-year old Julia Fealey, a junior member of the St. Cleve District Art and Literary Society and a poet in her own right, is known to have been friendly with Gerald for some time and has often written poems with him.
-                        The accusation was outrageous, said her family doctor, and there was no question of Gerald Bostock being called upon for a medical test, since the girl was obviously lying to protect the real father, but in her state of anxiety showed no sign of changing her story.
-                        Mrs. Daphne Bostock, Gerald's mother already much upset over the events of this week, told our reporter: <q>It's disgusting. She's always been jealous of my Gerald.</q>
-                    </p>
-                </article>
-            </div>
-            <div class="article-wrapper">
-                <article id="director">
-                    <header>
-                        <h1>DIRECTOR ACCUSED</h1>
-                    </header>
-                    <p>
-                        John Bowden, 35, managing director of Tremlett Avenue, St. Cleve, was remanded on bail until december 19 at the assizes accused of dishonestly handling two blouses at the High Street, St. Cleve between October 13th and October 15th. Bowden was bailed in his own recognisance of £50.
-                    </p>
-                </article>
-            </div>
-            <div class="article-wrapper">
-                <article id="mongrel">
-                    <header>
-                        <h1>Mongrel dog soils actor's foot</h1>
-                    </header>
-                    <p>
-                        The cameras were roling film actor Robert E. Levi was asddresing his men in the making of his new film <q>Biggles and the snake-women</q> when a mongrel dog soiled his foot. The dog belonged to japanes make-up artist Tatu Tuyu who recently became resident in St. Cleve. He explained later poor Poopsie was taken short. Picture on <a href="">page 8</a>.
-                    </p>
-                </article>
-            </div>
-            <div class="article-wrapper">
-                <article id="head">
-                    <header>
-                        <h1>HEAD INJURY</h1>
-                    </header>
-                    <p class="lead">
-                        Fifty-two year old Sarah Pickles of the High Street, St. Cleve, cut her head when she tripped over while walking in the High Street, St. Cleve.
-                    </p>
-                </article>
-            </div>
+                    </div>
+                    <article id="article__ufo">
+                        <div class="article__body-text">
+                            <header>
+                                <h1>UFO SIGHTING SENSATION</h1>
+                            </header>
+                            <p class="lead">
+                                A statement has been issued following last Tuesday's night' alleged spotting of an unidentified flying “Object”.
+                            </p>
+                            <p>The following was related to staff reporter, Nigel Turpin, by policy constable Grimpace of the local constabulary.
+                            </p>
+                            <q>I was proceeding towards the junction of Tremlett Avenue and High Street, St. Cleve at approximately two minutes past eleven on Tuesday evening when my attention was called to a strange noise.
+                            </q>
+                            <q>Subsequent investigation revealed this to be a brightly lit object low in the southern sky over Linwell. After a few bad <q>noises</q> the <q>Phenomenon</q> flew away at an <q>Amazing speed</q> in the direction of the public library.
+                                <h2>Hasty Snap</h2>
+                                Fortunately I was able to make a photographic testimonial of the <q>Ship in the sky</q> (Reproduced above)
+                            </q>
+                            <!-- It is in fact reproduced below -->
+                            <figure>
+                                <img src="images/white ufo.png" alt="photograph" />
+                                <figcaption>The Grimpace object over the library.</figcaption>
+                            </figure>
+                            The <q>Photograph</q> and PC Grimpace are being <q>forwarded to East Anglia Divisional Headquarters</q> for <q>further enquires</q>.
+                        </div>
+                    </article>
+                    <article id="article__little">
+                        <header>
+                            <h1>
+                                LITTLE MILTON IN SCHOOL-GIRL PREGNANCY ROW
+                            </h1>
+                        </header>
+                        <p class="lead">
+                            A fourteen year-old this week blamed her pregnancy on Gerald Bostock, the eight year old poet at the centre of this week's major St. Cleve controversy.
+                        </p>
+                        <div class="article__body-text">
+                            <p>
+                                The girl, 14-year old Julia Fealey, a junior member of the St. Cleve District Art and Literary Society and a poet in her own right, is known to have been friendly with Gerald for some time and has often written poems with him.
+                                The accusation was outrageous, said her family doctor, and there was no question of Gerald Bostock being called upon for a medical test, since the girl was obviously lying to protect the real father, but in her state of anxiety showed no sign of changing her story.
+                                Mrs. Daphne Bostock, Gerald's mother already much upset over the events of this week, told our reporter: <q>It's disgusting. She's always been jealous of my Gerald.</q>
+                            </p>
+                        </div>
+                    </article>
+                    <article id="article__director">
+                        <header>
+                            <h1>DIRECTOR ACCUSED</h1>
+                        </header>
+                        <p>
+                            John Bowden, 35, managing director of Tremlett Avenue, St. Cleve, was remanded on bail until december 19 at the assizes accused of dishonestly handling two blouses at the High Street, St. Cleve between October 13th and October 15th. Bowden was bailed in his own recognisance of £50.
+                        </p>
+                    </article>
+                    <article id="article__mongrel">
+                        <header>
+                            <h1>Mongrel dog soils actor's foot</h1>
+                        </header>
+                        <div class="article__body-text">
+                            <p>
+                                The cameras were roling film actor Robert E. Levi was addresing his men in the making of his new film <q>Biggles and the snake-women</q> when a mongrel dog soiled his foot. The dog belonged to japanese make-up artist Tatu Tuyu who recently became resident in St. Cleve. He explained later poor Poopsie was taken short. Picture on <a href="#">page 8</a>.
+                            </p>
+                        </div>
+                    </article>
+                    <article id="article__head">
+                        <header>
+                            <h1>HEAD INJURY</h1>
+                        </header>
+                        <p class="lead">
+                            Fifty-two year old Sarah Pickles of the High Street, St. Cleve, cut her head when she tripped over while walking in the High Street, St. Cleve.
+                        </p>
+                    </article>
+            </section>
         </main>
     </body>
 </html>
