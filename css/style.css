@@ -8,7 +8,8 @@
     --headline-font-family: "Roboto Condensed", sans-serif;
     /* --phi: 1.618033989; */
     /* --masthead__size: 14.58980337503375031vh; */
-    --masthead__size: 10rem;
+    /* --masthead__size: 10rem; */
+    --masthead__size: 5rem;
     --masthead__size-sup: calc(var(--masthead__size) / 2.61);
     --masthead__size-small: calc(var(--masthead__size) / 4.2360679774997);
 }
@@ -29,9 +30,9 @@ body {
 
     background-color: var(--background-color);
     padding: 0;
-    margin: 1vmin 11vmin;
-    line-height: 1;
-    /* text-size-adjust: none; */
+    /* margin: 1vmin 11vmin; */
+    /* margin: 5vmin; */
+    margin: 1vmin;
 }
 
 main {
@@ -53,33 +54,20 @@ h1, h2 {
     text-align: center;
 }
 
-ul {
-    margin: 0;
-    /* Firefox sets the default left padfing to 40px */
-    padding-left: 0;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-transform: uppercase;
-}
+/* #home { */
+/*     grid-row: 1/2; */
+/*     grid-column: 1/2; */
+/* } */
 
-#home {
-    grid-row: 1/2;
-    grid-column: 1/2;
-}
+/* #feature { */
+/*     grid-row: 2/4; */
+/*     grid-column: 4/5; */
+/* } */
 
-#feature {
-    grid-row: 2/4;
-    grid-column: 4/5;
-}
-
-#entertainment {
-    grid-row: 3/4;
-    grid-column: 5/6;
-}
+/* #entertainment { */
+/*     grid-row: 3/4; */
+/*     grid-column: 5/6; */
+/* } */
 
 
 a {
@@ -105,27 +93,33 @@ a:not(.section):hover {
     background-color: var(--link-hover-color);
 }
 
-.header__nav {
-    grid-area: nav;
-    font-weight: bold;
-    padding: 0px;
-    line-height: 1.5;
-    align-self: center;
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* the Linwell area overlaps the double-rule decoration by means of a solid
+   background and a higher z-index */
+    grid-template-areas:
+        "The The The"
+            "St-Cleve St-Cleve St-Cleve"
+            "artwork artwork artwork"
+            "Chronicle Chronicle Chronicle"
+            "Linwell Linwell Linwell"
+            "date number price"
+            "nav nav nav";
+
+    /* grid-template-areas for larger displays */
+    /* grid-template-areas: */
+    /*     "nav The The artwork . . ." */
+    /*         "nav St-Cleve St-Cleve artwork Chronicle Chronicle Chronicle" */
+    /*         "nav date Linwell Linwell Linwell number price" */
+    /*         ". . Linwell Linwell Linwell . ."; */
+    /* align-items: end; */
+    justify-items: center;
+    /* justify-content: stretch; */
+    /* align-content: stretch; */
+
+    line-height: 1;
 }
-
-/* #feature > :nth-child(1) { */
-/*     /\* font-size: 0.45em; *\/ */
-/*     font-size: 2.5vw; */
-/* } */
-
-/* #feature > :nth-child(2) { */
-/*     /\* font-size: 0.7em; *\/ */
-/*     font-size: 4vw; */
-/* } */
-
-/* #feature > :nth-child(3) { */
-/*     font-size: 1.2vw; */
-/* } */
 
 .masthead__title {
     font-family: "Old English Text MT Std", "ChomskyRegular", fantasy;
@@ -137,7 +131,6 @@ a:not(.section):hover {
     justify-self: start;
     grid-area: The;
     align-self: end;
-    /* line-height: 0.5; */
 }
 
 #masthead__St-Cleve, #masthead__Chronicle {
@@ -160,7 +153,9 @@ a:not(.section):hover {
 
 #masthead__artwork {
     grid-area: artwork;
-    width: calc(var(--masthead__size) * 2);
+    /* width: calc(var(--masthead__size) * 2); */
+    /* width: 100%; */
+    /* max-height: 100%; */
     /* height: 50%; */
     /* align-self: center; */
     /* justify-self: center; */
@@ -182,21 +177,13 @@ a:not(.section):hover {
     /* to overlap the horizontal double-rule */
     z-index: 1;
 
-    white-space: nowrap;
+    /* align-self: start; */
+    /* white-space: nowrap; */
 }
 
 .masthead__run {
     /* font-family: serif; */
-    /* font-size: small; */
-    /* font-size: var(--masthead__size-small); */
-}
-
-#masthead__rule {
-    border-top: thick double;
-    grid-row: 4/5;
-    grid-column: 1/-1;
-    align-self: start;
-    width: 100%;
+    font-size: calc(var(--masthead__size) / 7);
 }
 
 #masthead__date {
@@ -210,6 +197,47 @@ a:not(.section):hover {
 #masthead__price {
     grid-area: price;
 }
+
+.header__nav {
+    grid-area: nav;
+    background-color: var(--link-color);
+    font-weight: bold;
+    padding: 0px;
+
+    /* Be nicer to touch screen users */
+    line-height: 1.5;
+
+    align-self: center;
+    justify-self: end;
+}
+
+
+.header__nav-list {
+    margin: 0;
+    /* Firefox sets the default left padfing to 40px */
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-transform: uppercase;
+}
+
+/* #feature > :nth-child(1) { */
+/*     /\* font-size: 0.45em; *\/ */
+/*     font-size: 2.5vw; */
+/* } */
+
+/* #feature > :nth-child(2) { */
+/*     /\* font-size: 0.7em; *\/ */
+/*     font-size: 4vw; */
+/* } */
+
+/* #feature > :nth-child(3) { */
+/*     font-size: 1.2vw; */
+/* } */
 
 main{
     /* margin-left: calc(var(--feature-size) / 3); */
@@ -269,7 +297,7 @@ article {
 
 #header__judges {
     /* FF 69 does not support column-span so we wrap multi-column around
-   .artile__body-text instead*/
+   .article__body-text instead*/
     /* column-span: all; */
 
     /* Maybe for the facsimile */
@@ -285,7 +313,7 @@ article {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 figure {
@@ -313,25 +341,41 @@ figure {
     /* column-width: 15em; */
 }
 
-
 @media (min-width: 40em) {
     .masthead {
         display: grid;
         grid-template-rows:
             repeat(4, auto);
         grid-template-columns:
-            repeat(7, auto);
+            1fr 1fr 2fr 1fr 1fr 1fr 1fr;
+        /* 8vw repeat(6, auto); */
         /* the Linwell area overlaps the double-rule decoration by means of a solid
    background and a higher z-index */
         grid-template-areas:
-            "nav The The artwork . . ."
-                "nav St-Cleve St-Cleve artwork Chronicle Chronicle Chronicle"
+            "nav . The artwork . . ."
+                "nav . St-Cleve artwork Chronicle Chronicle ."
                 "nav date Linwell Linwell Linwell number price"
                 ". . Linwell Linwell Linwell . .";
         align-items: end;
         justify-items: center;
-        /* justify-content: stretch; */
-        /* align-content: stretch; */
+    }
+
+    #masthead__St-Cleve {
+        justify-self: left;
+    }
+
+    /* #masthead__Chronicle { */
+    /*     justify-self: end; */
+    /* } */
+
+    #masthead__rule {
+        border-top: thick double;
+
+        grid-row: 4/5;
+
+        grid-column: 1/-1;
+        align-self: start;
+        width: 100%;
     }
 
     .figure-right {
@@ -342,7 +386,7 @@ figure {
 
         width: 50%;
         float: right;
-        /* margin-left: 1em; */
+        margin-left: 1em;
         /* grid-row: 1/3; */
         /* grid-column: 3/6; */
     }
